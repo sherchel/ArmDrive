@@ -1,0 +1,13 @@
+.\objects\bsp_gpio.o: ..\..\User\SYS_BASE\gpio\bsp_gpio.c
+.\objects\bsp_gpio.o: ..\..\User\SYS_BASE\gpio\bsp_gpio.h
+.\objects\bsp_gpio.o: ..\..\Libraries\CMSIS\stm32f10x.h
+.\objects\bsp_gpio.o: ..\..\Libraries\CMSIS\core_cm3.h
+.\objects\bsp_gpio.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\bsp_gpio.o: ..\..\Libraries\CMSIS\system_stm32f10x.h
+.\objects\bsp_gpio.o: ..\..\User\stm32f10x_conf.h
+.\objects\bsp_gpio.o: ..\..\Libraries\FWlib\inc\stm32f10x_gpio.h
+.\objects\bsp_gpio.o: ..\..\Libraries\CMSIS\stm32f10x.h
+.\objects\bsp_gpio.o: ..\..\Libraries\FWlib\inc\stm32f10x_rcc.h
+.\objects\bsp_gpio.o: ..\..\Libraries\FWlib\inc\stm32f10x_tim.h
+.\objects\bsp_gpio.o: ..\..\Libraries\FWlib\inc\stm32f10x_usart.h
+.\objects\bsp_gpio.o: ..\..\Libraries\FWlib\inc\misc.h
