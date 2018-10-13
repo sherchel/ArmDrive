@@ -531,16 +531,6 @@
           <GroupName>User</GroupName>
           <Files>
             <File>
-              <FileName>AP_test.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\User\AP_Test\AP_test.c</FilePath>
-            </File>
-            <File>
-              <FileName>bsp_esp8266.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\User\ESP8266\bsp_esp8266.c</FilePath>
-            </File>
-            <File>
               <FileName>bsp_GeneralTim.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\User\GeneralTim\bsp_GeneralTim.c</FilePath>
