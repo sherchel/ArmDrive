@@ -1,10 +1,11 @@
 # Arm Drive
 ## 代码开发记录  
-++CodeDesignRecord++       
+## 用于机械臂驱动 
+    
 @author sherchel
 
-#### 2018.10.13
-用于机械臂驱动
+#### Version 2.0
+增加S型驱动曲线频率库
 
 	.
 

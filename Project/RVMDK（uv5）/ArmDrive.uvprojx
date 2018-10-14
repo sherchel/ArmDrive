@@ -7,10 +7,9 @@
 
   <Targets>
     <Target>
-      <TargetName>Schmeiser Robo_AP</TargetName>
+      <TargetName>Target 1</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pCCUsed>5060183::V5.06 update 2 (build 183)::ARMCC</pCCUsed>
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -48,14 +47,14 @@
             <NotGenerated>0</NotGenerated>
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
-          <OutputDirectory>.\Objects\</OutputDirectory>
-          <OutputName>Schmeiser Robo_AP</OutputName>
+          <OutputDirectory>.\</OutputDirectory>
+          <OutputName>ArmDrive</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
-          <CreateHexFile>1</CreateHexFile>
+          <CreateHexFile>0</CreateHexFile>
           <DebugInformation>1</DebugInformation>
           <BrowseInformation>1</BrowseInformation>
-          <ListingPath>.\Listings\</ListingPath>
+          <ListingPath>.\</ListingPath>
           <HexFormatSelection>1</HexFormatSelection>
           <Merge32K>0</Merge32K>
           <CreateBatchFile>0</CreateBatchFile>
@@ -133,12 +132,12 @@
             <UseExternalTool>0</UseExternalTool>
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
-            <Capability>1</Capability>
-            <DriverSelection>4099</DriverSelection>
+            <Capability>0</Capability>
+            <DriverSelection>-1</DriverSelection>
           </Flash1>
-          <bUseTDR>0</bUseTDR>
-          <Flash2>Segger\JL2CM3.dll</Flash2>
-          <Flash3>"" ()</Flash3>
+          <bUseTDR>1</bUseTDR>
+          <Flash2>BIN\UL2CM3.DLL</Flash2>
+          <Flash3></Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -187,7 +186,7 @@
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
-            <useUlib>1</useUlib>
+            <useUlib>0</useUlib>
             <EndSel>0</EndSel>
             <uLtcg>0</uLtcg>
             <nSecure>0</nSecure>
@@ -257,17 +256,17 @@
                 <Size>0x0</Size>
               </XRAM>
               <OCR_RVCT1>
-                <Type>1</Type>
+                <Type>0</Type>
                 <StartAddress>0x0</StartAddress>
                 <Size>0x0</Size>
               </OCR_RVCT1>
               <OCR_RVCT2>
-                <Type>1</Type>
+                <Type>0</Type>
                 <StartAddress>0x0</StartAddress>
                 <Size>0x0</Size>
               </OCR_RVCT2>
               <OCR_RVCT3>
-                <Type>1</Type>
+                <Type>0</Type>
                 <StartAddress>0x0</StartAddress>
                 <Size>0x0</Size>
               </OCR_RVCT3>
@@ -277,7 +276,7 @@
                 <Size>0x80000</Size>
               </OCR_RVCT4>
               <OCR_RVCT5>
-                <Type>1</Type>
+                <Type>0</Type>
                 <StartAddress>0x0</StartAddress>
                 <Size>0x0</Size>
               </OCR_RVCT5>
@@ -314,7 +313,7 @@
             <Optim>1</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
-            <OneElfS>0</OneElfS>
+            <OneElfS>1</OneElfS>
             <Strict>0</Strict>
             <EnumInt>0</EnumInt>
             <PlainCh>0</PlainCh>
@@ -323,7 +322,7 @@
             <wLevel>2</wLevel>
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
-            <uC99>0</uC99>
+            <uC99>1</uC99>
             <useXO>0</useXO>
             <v6Lang>1</v6Lang>
             <v6LangP>1</v6LangP>
@@ -334,9 +333,9 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>STM32F10X_HD, USE_STDPERIPH_DRIVER</Define>
+              <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\Libraries\FWlib\inc;..\..\Libraries\CMSIS;..\..\User;..\..\User\AP_Test;..\..\User\ESP8266;..\..\User\GeneralTim;..\..\User\Motor;..\..\User\SYS_BASE\Common;..\..\User\SYS_BASE\gpio;..\..\User\SYS_BASE\led;..\..\User\SYS_BASE\SysTick;..\..\User\SYS_BASE\usart</IncludePath>
+              <IncludePath></IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -378,213 +377,10 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>DOC</GroupName>
-          <Files>
-            <File>
-              <FileName>CodeDesignRecord.txt</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\..\User\CodeDesignRecord.txt</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>STARUP</GroupName>
-          <Files>
-            <File>
-              <FileName>core_cm3.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\CMSIS\core_cm3.c</FilePath>
-            </File>
-            <File>
-              <FileName>system_stm32f10x.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\CMSIS\system_stm32f10x.c</FilePath>
-            </File>
-            <File>
-              <FileName>startup_stm32f10x_hd.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>..\..\Libraries\CMSIS\startup\startup_stm32f10x_hd.s</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>Libraries</GroupName>
-          <Files>
-            <File>
-              <FileName>misc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\FWlib\src\misc.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_adc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\FWlib\src\stm32f10x_adc.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_bkp.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\FWlib\src\stm32f10x_bkp.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_can.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\FWlib\src\stm32f10x_can.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_cec.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\FWlib\src\stm32f10x_cec.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_crc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\FWlib\src\stm32f10x_crc.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_dac.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\FWlib\src\stm32f10x_dac.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_dbgmcu.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\FWlib\src\stm32f10x_dbgmcu.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_dma.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\FWlib\src\stm32f10x_dma.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_exti.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\FWlib\src\stm32f10x_exti.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_flash.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\FWlib\src\stm32f10x_flash.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_fsmc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\FWlib\src\stm32f10x_fsmc.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_gpio.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\FWlib\src\stm32f10x_gpio.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_i2c.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\FWlib\src\stm32f10x_i2c.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_iwdg.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\FWlib\src\stm32f10x_iwdg.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_pwr.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\FWlib\src\stm32f10x_pwr.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_rcc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\FWlib\src\stm32f10x_rcc.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_rtc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\FWlib\src\stm32f10x_rtc.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_sdio.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\FWlib\src\stm32f10x_sdio.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_spi.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\FWlib\src\stm32f10x_spi.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_tim.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\FWlib\src\stm32f10x_tim.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_usart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\FWlib\src\stm32f10x_usart.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_wwdg.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\Libraries\FWlib\src\stm32f10x_wwdg.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>User</GroupName>
-          <Files>
-            <File>
-              <FileName>bsp_GeneralTim.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\User\GeneralTim\bsp_GeneralTim.c</FilePath>
-            </File>
-            <File>
-              <FileName>bsp_motor.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\User\Motor\bsp_motor.c</FilePath>
-            </File>
-            <File>
-              <FileName>Common.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\User\SYS_BASE\Common\Common.c</FilePath>
-            </File>
-            <File>
-              <FileName>bsp_gpio.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\User\SYS_BASE\gpio\bsp_gpio.c</FilePath>
-            </File>
-            <File>
-              <FileName>bsp_led.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\User\SYS_BASE\led\bsp_led.c</FilePath>
-            </File>
-            <File>
-              <FileName>bsp_SysTick.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\User\SYS_BASE\SysTick\bsp_SysTick.c</FilePath>
-            </File>
-            <File>
-              <FileName>bsp_usart1.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\User\SYS_BASE\usart\bsp_usart1.c</FilePath>
-            </File>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\User\main.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f10x_it.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\User\stm32f10x_it.c</FilePath>
-            </File>
-          </Files>
+          <GroupName>Source Group 1</GroupName>
         </Group>
       </Groups>
     </Target>
   </Targets>
-
-  <RTE>
-    <apis/>
-    <components/>
-    <files/>
-  </RTE>
 
 </Project>
